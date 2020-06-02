@@ -14,8 +14,7 @@ for(let li of lisHeart) {
 
 function handleClick(e){
   const ele = e.target;
-  // e.target.style.color = "red";
-  
+ 
   mimicServerCall()
   .then(function(){
     
