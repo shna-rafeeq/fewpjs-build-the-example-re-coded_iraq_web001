@@ -17,8 +17,8 @@ function handleClick(e){
   
   mimicServerCall()
   .then(function(){
-    // lisHeart.innerHTML= `${FULL_HEART}`;
-    // lisHeart.classList.add('activated-heart');
+    lisHeart.innerHTML= `${FULL_HEART}`;
+    lisHeart.classList.add('activated-heart');
     console.log("happen");
   })
   .catch(function(){
