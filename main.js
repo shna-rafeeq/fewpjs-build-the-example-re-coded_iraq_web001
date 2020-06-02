@@ -20,7 +20,7 @@ function handleClick(e){
     lisHeart.innerHTML= `${FULL_HEART}`;
     // console.log("happen");
   })
-  .catch(function(error){
+  .catch(function(){
   errorDiv.classList.remove('hidden');
   modalMessage.innerText = "Random server error. Try again.";
   // console.log("eror");
