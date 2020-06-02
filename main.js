@@ -30,8 +30,8 @@ function handleClick(e){
   })
   .catch(function(e){
     console.log(e)
-    errorDiv.classList.remove('hidden');
-    modalMessage.innerText = "Random server error. Try again.";
+    //errorDiv.classList.remove('hidden');
+    //modalMessage.innerText = "Random server error. Try again.";
   })
   setTimeout(hideError,5000);
 }
