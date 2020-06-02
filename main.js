@@ -11,7 +11,6 @@ for(let li of lisHeart) {
    li.addEventListener('click',handleClick);
 }
 
-
 function handleClick(e){
   const ele = e.target;
  
