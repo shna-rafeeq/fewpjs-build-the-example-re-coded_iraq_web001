@@ -18,11 +18,11 @@ function handleClick(e){
   mimicServerCall()
   .then(function(){
     
-    if(lisHeart.innerHTML == `${EMPTY_HEART}`){
+    if(lisHeart.innerHTML == '&#x2661;'){
      lisHeart.innerHTML= `${FULL_HEART}`;
      lisHeart.classList.add('activated-heart');
     }else{
-     lisHeart.innerHTML= `${EMPTY_HEART}`;
+     lisHeart.innerHTML= '&#x2661;';
      lisHeart.classList.remove('activated-heart');
     }
     
