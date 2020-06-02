@@ -17,6 +17,7 @@ let modalMessage = document.getElementById('modal-message');
 
 function handleClick(e){
   // e.target.style.color = "red";
+  
   mimicServerCall().catch(function(error){
   errorDiv.classList.remove('hidden');
   modalMessage.innerHTML = error.message;
