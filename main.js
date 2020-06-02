@@ -19,7 +19,9 @@ function handleClick(e){
   // e.target.style.color = "red";
   
   mimicServerCall()
-  // .then(){}
+  .then(function(){
+    
+  })
   .catch(function(error){
   errorDiv.classList.remove('hidden');
   modalMessage.innerText = "Random server error. Try again.";
