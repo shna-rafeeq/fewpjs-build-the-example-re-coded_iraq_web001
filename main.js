@@ -17,14 +17,14 @@ function handleClick(e){
   
   mimicServerCall()
   .then(function(){
-    lisHeart.innerHTML= `${FULL_HEART}`;
-    lisHeart.classList.add('activated-heart');
+    // lisHeart.innerHTML= `${FULL_HEART}`;
+    // lisHeart.classList.add('activated-heart');
     console.log("happen");
   })
   .catch(function(){
   errorDiv.classList.remove('hidden');
   modalMessage.innerText = "Random server error. Try again.";
-  // console.log("eror");
+  console.log("eror");
   })
   setTimeout(hideError,5000);
 }
