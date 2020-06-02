@@ -20,7 +20,7 @@ function handleClick(e){
   
   mimicServerCall()
   .then(function(){
-    
+    lisHeart.innerText = `${FULL_HEART}`;
   })
   .catch(function(error){
   errorDiv.classList.remove('hidden');
