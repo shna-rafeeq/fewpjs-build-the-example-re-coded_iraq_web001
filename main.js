@@ -4,16 +4,13 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 let lisHeart = document.getElementsByClassName('like-glyph');
+let errorDiv = document.getElementById('modal');
+let modalMessage = document.getElementById('modal-message');
+
 for(let li of lisHeart) {
    li.addEventListener('click',handleClick);
 }
 
-let errorDiv = document.getElementById('modal');
-let modalMessage = document.getElementById('modal-message');
-
-
-
-  
 
 function handleClick(e){
   // e.target.style.color = "red";
