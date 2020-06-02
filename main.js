@@ -3,7 +3,7 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-let lisHeart = document.getElementsByClassName('like-glyph');
+//let lisHeart = document.getElementsByClassName('like-glyph');
 let errorDiv = document.getElementById('modal');
 let modalMessage = document.getElementById('modal-message');
 
@@ -13,6 +13,7 @@ for(let li of lisHeart) {
 
 
 function handleClick(e){
+  const lisHeart = e.target;
   // e.target.style.color = "red";
   
   mimicServerCall()
