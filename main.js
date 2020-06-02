@@ -3,6 +3,26 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+let lis = document.getElementsByClassName('like');
+for(let li of lis) {
+   li.addEventListener('click',handleClick);
+}
+
+let errorDiv = document.getElementById('modal');
+let modalMessage = document.getElementById('modal-message');
+
+
+
+  
+
+function handleClick(e){
+  // e.target.style.color = "red";
+  mimicServerCall().catch(function(error){
+  errorDiv.classList.remove('hidden');
+  modalMessage.innerHTML = error.message;
+    
+  })
+}
 
 
 
