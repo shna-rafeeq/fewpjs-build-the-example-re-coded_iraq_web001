@@ -18,7 +18,9 @@ let modalMessage = document.getElementById('modal-message');
 function handleClick(e){
   // e.target.style.color = "red";
   
-  mimicServerCall().catch(function(error){
+  mimicServerCall()
+  // .then(){}
+  .catch(function(error){
   errorDiv.classList.remove('hidden');
   modalMessage.innerText = "Random server error. Try again.";
     
