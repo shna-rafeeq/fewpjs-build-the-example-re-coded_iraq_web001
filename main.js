@@ -18,6 +18,7 @@ function handleClick(e){
   mimicServerCall()
   .then(function(){
     lisHeart.innerHTML= `${FULL_HEART}`;
+    lisHeart.classList.add();
     // console.log("happen");
   })
   .catch(function(){
