@@ -28,7 +28,7 @@ function handleClick(e){
 // }
 // function hideError(){
 //   errorDiv.classList.add('hidden');
-// }
+ }
 
 
 
