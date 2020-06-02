@@ -28,10 +28,11 @@ function handleClick(e){
     
     console.log("happen");
   })
-  .catch(function(){
-  errorDiv.classList.remove('hidden');
-  modalMessage.innerText = "Random server error. Try again.";
-  console.log("eror");
+  .catch(function(e){
+    console.log(e)
+    errorDiv.classList.remove('hidden');
+    modalMessage.innerText = "Random server error. Try again.";
+    console.log("eror");
   })
   setTimeout(hideError,5000);
 }
