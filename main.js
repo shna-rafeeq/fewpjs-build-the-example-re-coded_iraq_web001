@@ -21,7 +21,7 @@ function handleClick(e){
      lisHeart.innerHTML= `${FULL_HEART}`;
      lisHeart.classList.add('activated-heart');
     }else{
-      lisHeart.innerHTML= `${EMPTY_HEART}`;
+     lisHeart.innerHTML= `${EMPTY_HEART}`;
      lisHeart.classList.remove('activated-heart');
     }
     
