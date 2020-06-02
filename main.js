@@ -21,11 +21,9 @@ function handleClick(e){
     if(ele.innerHTML == `${EMPTY_HEART}`){
      ele.innerHTML= `${FULL_HEART}`;
      ele.classList.add('activated-heart');
-    console.log("happen if");
     }else{
      ele.innerHTML= `${EMPTY_HEART}`;
      ele.classList.remove('activated-heart');
-    console.log("happen else");
     }
     
   })
