@@ -22,12 +22,13 @@ function handleClick(e){
     if(ele.innerHTML == '&#x2661;'){
      ele.innerHTML= `${FULL_HEART}`;
      ele.classList.add('activated-heart');
+    console.log("happen if");
     }else{
      ele.innerHTML= `${EMPTY_HEART}`;
      ele.classList.remove('activated-heart');
+    console.log("happen else");
     }
     
-    console.log("happen");
   })
   .catch(function(e){
     console.log(e)
