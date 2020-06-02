@@ -16,8 +16,7 @@ let modalMessage = document.getElementById('modal-message');
   
 
 function handleClick(e){
-  // e.target.style.color = "red";
-  
+
   mimicServerCall()
   // .then(){}
   .catch(function(error){
