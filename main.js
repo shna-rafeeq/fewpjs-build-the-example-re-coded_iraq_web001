@@ -16,18 +16,18 @@ let modalMessage = document.getElementById('modal-message');
   
 
 function handleClick(e){
-  e.target.style.color = "red";
+  // e.target.style.color = "red";
   
-//   mimicServerCall()
-//   // .then(){}
-//   .catch(function(error){
-//   errorDiv.classList.remove('hidden');
-//   modalMessage.innerText = "Random server error. Try again.";
-//   })
-//   setTimeout(hideError,5000);
-// }
-// function hideError(){
-//   errorDiv.classList.add('hidden');
+  mimicServerCall()
+  // .then(){}
+  .catch(function(error){
+  errorDiv.classList.remove('hidden');
+  modalMessage.innerText = "Random server error. Try again.";
+  })
+  setTimeout(hideError,5000);
+}
+function hideError(){
+  errorDiv.classList.add('hidden');
  }
 
 
