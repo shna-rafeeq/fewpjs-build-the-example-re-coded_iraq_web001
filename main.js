@@ -20,9 +20,11 @@ function handleClick(e){
     if(lisHeart.innerHTML == `${EMPTY_HEART}`){
      lisHeart.innerHTML= `${FULL_HEART}`;
      lisHeart.classList.add('activated-heart');
+    }else{
+      lisHeart.innerHTML= `${EMPTY_HEART}`;
+     lisHeart.classList.remove('activated-heart');
     }
-    // lisHeart.innerHTML= `${FULL_HEART}`;
-    // lisHeart.classList.add('activated-heart');
+    
     console.log("happen");
   })
   .catch(function(){
