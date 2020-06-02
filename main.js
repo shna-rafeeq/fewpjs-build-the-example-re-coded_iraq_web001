@@ -20,7 +20,7 @@ function handleClick(e){
   
   mimicServerCall()
   .then(function(){
-    lisHeart.innerHTML = `${FULL_HEART}`;
+    lisHeart.innerHTML = FULL_HEART;
     console.log("happen");
   })
   .catch(function(error){
