@@ -21,7 +21,7 @@ function handleClick(e){
     lisHeart.classList.add('activated-heart');
     console.log("happen");
   })
-  .catch(function(){
+  .catch(function(error){
   errorDiv.classList.remove('hidden');
   modalMessage.innerText = "Random server error. Try again.";
   console.log("eror");
