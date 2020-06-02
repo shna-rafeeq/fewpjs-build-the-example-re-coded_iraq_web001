@@ -12,7 +12,7 @@ for(let li of lisHeart) {
 }
 
 function handleClick(e){
-   e.target;
+  const ele = e.target;
  
   mimicServerCall()
   .then(function(){
