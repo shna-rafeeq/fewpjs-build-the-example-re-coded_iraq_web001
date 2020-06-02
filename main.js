@@ -18,12 +18,12 @@ function handleClick(e){
   mimicServerCall()
   .then(function(){
     lisHeart.innerText = '♥';
-    console.log("happen");
+    // console.log("happen");
   })
   .catch(function(error){
   errorDiv.classList.remove('hidden');
   modalMessage.innerText = "Random server error. Try again.";
-  console.log("eror");
+  // console.log("eror");
   })
   setTimeout(hideError,5000);
 }
