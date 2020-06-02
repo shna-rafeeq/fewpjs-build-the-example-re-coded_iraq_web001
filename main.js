@@ -20,7 +20,7 @@ function handleClick(e){
   
   mimicServerCall().catch(function(error){
   errorDiv.classList.remove('hidden');
-  modalMessage.innerHTML = error.message;
+  modalMessage.innerHTML = "Random server error. Try again.";
     
   })
 }
