@@ -3,8 +3,8 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-let lis = document.getElementsByClassName('like-glyph');
-for(let li of lis) {
+let lisHeart = document.getElementsByClassName('like-glyph');
+for(let li of lisHeart) {
    li.addEventListener('click',handleClick);
 }
 
