@@ -3,7 +3,7 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-//let lisHeart = document.getElementsByClassName('like-glyph');
+let lisHeart = document.getElementsByClassName('like-glyph');
 let errorDiv = document.getElementById('modal');
 let modalMessage = document.getElementById('modal-message');
 
@@ -13,18 +13,18 @@ for(let li of lisHeart) {
 
 
 function handleClick(e){
-  const lisHeart = e.target;
+  const ele = e.target;
   // e.target.style.color = "red";
   
   mimicServerCall()
   .then(function(){
     
-    if(lisHeart.innerHTML == '&#x2661;'){
-     lisHeart.innerHTML= `${FULL_HEART}`;
-     lisHeart.classList.add('activated-heart');
+    if(ele.innerHTML == '&#x2661;'){
+     ele.innerHTML= `${FULL_HEART}`;
+     ele.classList.add('activated-heart');
     }else{
-     lisHeart.innerHTML= `${EMPTY_HEART}`;
-     lisHeart.classList.remove('activated-heart');
+     ele.innerHTML= `${EMPTY_HEART}`;
+     ele.classList.remove('activated-heart');
     }
     
     console.log("happen");
