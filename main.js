@@ -19,7 +19,7 @@ function handleClick(e){
   mimicServerCall()
   .then(function(){
     
-    if(ele.innerHTML == '&#x2661;'){
+    if(ele.innerHTML == `${EMPTY_HEART}`){
      ele.innerHTML= `${FULL_HEART}`;
      ele.classList.add('activated-heart');
     console.log("happen if");
