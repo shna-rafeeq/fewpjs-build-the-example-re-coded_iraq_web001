@@ -23,10 +23,12 @@ function handleClick(e){
   .catch(function(error){
   errorDiv.classList.remove('hidden');
   modalMessage.innerText = "Random server error. Try again.";
-  
   })
+  setTimeout(,5);
 }
-
+function hideError(){
+  errorDiv.classList.add('hidden');
+}
 
 
 
