@@ -17,7 +17,9 @@ function handleClick(e){
   
   mimicServerCall()
   .then(function(){
-    if(lisHeart.innerHTML == `${FULL_HEART}`){}
+    if(lisHeart.innerHTML == `${EMPTY_HEART}`){
+     lisHeart.innerHTML= `${FULL_HEART}`;
+    }
     // lisHeart.innerHTML= `${FULL_HEART}`;
     // lisHeart.classList.add('activated-heart');
     console.log("happen");
