@@ -24,7 +24,7 @@ function handleClick(e){
   errorDiv.classList.remove('hidden');
   modalMessage.innerText = "Random server error. Try again.";
   })
-  setTimeout(,5);
+  setTimeout(hideError,5);
 }
 function hideError(){
   errorDiv.classList.add('hidden');
